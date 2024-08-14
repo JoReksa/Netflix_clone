@@ -19,6 +19,7 @@ target 'NetflixClones' do
 # lib
   pod 'lottie-ios'
   pod 'SnapKit'
+  pod 'RxSwift'
   
 end
 

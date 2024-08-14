@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-NetflixClones-NetflixClonesUITests/Pods-NetflixClones-NetflixClonesUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

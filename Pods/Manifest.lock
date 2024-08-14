@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (4.5.0)
+  - SnapKit (5.7.1)
+
+DEPENDENCIES:
+  - lottie-ios
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - SnapKit
+
+SPEC CHECKSUMS:
+  lottie-ios: a881093fab623c467d3bce374367755c272bdd59
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+
+PODFILE CHECKSUM: 3129cdedd7758c7031345fa0a618e47baef469e0
+
+COCOAPODS: 1.15.2

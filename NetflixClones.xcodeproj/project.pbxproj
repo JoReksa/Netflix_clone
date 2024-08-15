@@ -25,6 +25,8 @@
 		CF11565B2C6D280E0097D861 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11565A2C6D280E0097D861 /* UpcomingViewController.swift */; };
 		CF23B2DA2C6DE20700559ED3 /* SearcViewhController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23B2D92C6DE20700559ED3 /* SearcViewhController.swift */; };
 		CF23B2DC2C6DE24600559ED3 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23B2DB2C6DE24600559ED3 /* DownloadViewController.swift */; };
+		CF23B2E12C6E643900559ED3 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23B2E02C6E643900559ED3 /* AppData.swift */; };
+		CF23B2E32C6E677500559ED3 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF23B2E22C6E677500559ED3 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		CF11565A2C6D280E0097D861 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		CF23B2D92C6DE20700559ED3 /* SearcViewhController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearcViewhController.swift; sourceTree = "<group>"; };
 		CF23B2DB2C6DE24600559ED3 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		CF23B2E02C6E643900559ED3 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		CF23B2E22C6E677500559ED3 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,12 +156,12 @@
 			isa = PBXGroup;
 			children = (
 				CF1156222C6CC06D0097D861 /* Info.plist */,
+				CF1156472C6CD1910097D861 /* OtherFiles */,
 				CF1156522C6D0DAF0097D861 /* Component */,
 				CF23B2DD2C6E159B00559ED3 /* Module */,
 				CF11564F2C6D0D420097D861 /* Controller */,
-				CF11564E2C6D0B9F0097D861 /* Supporting */,
-				CF1156472C6CD1910097D861 /* OtherFiles */,
 				CF1156452C6CD1430097D861 /* View */,
+				CF11564E2C6D0B9F0097D861 /* Supporting */,
 			);
 			path = NetflixClones;
 			sourceTree = "<group>";
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				CF11564C2C6CD3880097D861 /* SplashScreenViewController.swift */,
+				CF23B2E22C6E677500559ED3 /* ContentViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 		CF23B2DD2C6E159B00559ED3 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CF23B2E02C6E643900559ED3 /* AppData.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				CF11565B2C6D280E0097D861 /* UpcomingViewController.swift in Sources */,
 				CF1156542C6D0DDA0097D861 /* BaseViewController.swift in Sources */,
 				CF1156512C6D0D630097D861 /* HomeViewController.swift in Sources */,
+				CF23B2E32C6E677500559ED3 /* ContentViewController.swift in Sources */,
 				CF1156152C6CC06B0097D861 /* AppDelegate.swift in Sources */,
 				CF11564D2C6CD3880097D861 /* SplashScreenViewController.swift in Sources */,
 				CF1156592C6D26CA0097D861 /* BottomTabBarViewController.swift in Sources */,
@@ -489,6 +496,7 @@
 				CF23B2DA2C6DE20700559ED3 /* SearcViewhController.swift in Sources */,
 				CF23B2DC2C6DE24600559ED3 /* DownloadViewController.swift in Sources */,
 				CF1156572C6D13A10097D861 /* BaseViewModel.swift in Sources */,
+				CF23B2E12C6E643900559ED3 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

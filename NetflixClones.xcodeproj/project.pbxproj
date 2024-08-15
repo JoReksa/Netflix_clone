@@ -13,7 +13,6 @@
 		CF1156152C6CC06B0097D861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1156142C6CC06B0097D861 /* AppDelegate.swift */; };
 		CF1156172C6CC06B0097D861 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1156162C6CC06B0097D861 /* SceneDelegate.swift */; };
 		CF11561E2C6CC06D0097D861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF11561D2C6CC06D0097D861 /* Assets.xcassets */; };
-		CF1156212C6CC06D0097D861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF11561F2C6CC06D0097D861 /* LaunchScreen.storyboard */; };
 		CF11562C2C6CC06D0097D861 /* NetflixClonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11562B2C6CC06D0097D861 /* NetflixClonesTests.swift */; };
 		CF1156362C6CC06D0097D861 /* NetflixClonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1156352C6CC06D0097D861 /* NetflixClonesUITests.swift */; };
 		CF1156382C6CC06D0097D861 /* NetflixClonesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1156372C6CC06D0097D861 /* NetflixClonesUITestsLaunchTests.swift */; };
@@ -59,7 +58,6 @@
 		CF1156142C6CC06B0097D861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF1156162C6CC06B0097D861 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CF11561D2C6CC06D0097D861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF1156202C6CC06D0097D861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1156222C6CC06D0097D861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF1156272C6CC06D0097D861 /* NetflixClonesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetflixClonesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF11562B2C6CC06D0097D861 /* NetflixClonesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixClonesTests.swift; sourceTree = "<group>"; };
@@ -155,10 +153,10 @@
 			children = (
 				CF1156222C6CC06D0097D861 /* Info.plist */,
 				CF1156522C6D0DAF0097D861 /* Component */,
+				CF23B2DD2C6E159B00559ED3 /* Module */,
 				CF11564F2C6D0D420097D861 /* Controller */,
 				CF11564E2C6D0B9F0097D861 /* Supporting */,
 				CF1156472C6CD1910097D861 /* OtherFiles */,
-				CF1156462C6CD18A0097D861 /* Modules */,
 				CF1156452C6CD1430097D861 /* View */,
 			);
 			path = NetflixClones;
@@ -189,13 +187,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CF1156462C6CD18A0097D861 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
 		CF1156472C6CD1910097D861 /* OtherFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +201,6 @@
 				CF1156142C6CC06B0097D861 /* AppDelegate.swift */,
 				CF1156162C6CC06B0097D861 /* SceneDelegate.swift */,
 				CF11561D2C6CC06D0097D861 /* Assets.xcassets */,
-				CF11561F2C6CC06D0097D861 /* LaunchScreen.storyboard */,
 				CF1156582C6D26C90097D861 /* BottomTabBarViewController.swift */,
 			);
 			path = Supporting;
@@ -242,6 +232,13 @@
 				CF1156562C6D13A10097D861 /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		CF23B2DD2C6E159B00559ED3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +350,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF1156212C6CC06D0097D861 /* LaunchScreen.storyboard in Resources */,
 				CF11561E2C6CC06D0097D861 /* Assets.xcassets in Resources */,
 				CF1156492C6CD1C50097D861 /* Logo.json in Resources */,
 			);
@@ -527,17 +523,6 @@
 			targetProxy = CF1156322C6CC06D0097D861 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CF11561F2C6CC06D0097D861 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF1156202C6CC06D0097D861 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CF1156392C6CC06D0097D861 /* Debug */ = {

@@ -21,15 +21,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func setupWindows (with scene: UIScene){
-        guard let windowScene = (scene as? UIWindowScene)else {return}
-        let window = UIWindow(windowScene: windowScene)
-        self.window = window
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        self.window?.windowScene = windowScene
+        self.window?.rootViewController = SplashScreenViewController()
         self.window?.makeKeyAndVisible()
         
-        let vc = SplashScreenViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        self.window?.rootViewController = nav
+//        let vc = SplashScreenViewController()
+//        let nav = UINavigationController(rootViewController: vc)
+//        nav.modalPresentationStyle = .fullScreen
+//        self.window?.rootViewController = nav
     }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

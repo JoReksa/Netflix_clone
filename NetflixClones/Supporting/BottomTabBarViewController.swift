@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class BottomTabBarViewController: UITabBarController {
 
 
@@ -17,19 +17,18 @@ class BottomTabBarViewController: UITabBarController {
 
     //MARK: - BOTTOM TAB
     private func setupBar (){
+//        let dxs: CGFloat = 0
+//        let dys: CGFloat = -10
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+//        blurEffectView.frame = tabBar.bounds.insetBy(dx: dxs, dy: dys)
+        blurEffectView.frame = tabBar.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+        tabBar.addSubview(blurEffectView)
+        tabBar.sendSubviewToBack(blurEffectView)
+        
 
-//        tabBar.backgroundColor = .clear
-//        tabBar.backgroundImage = UIImage()
-//        tabBar.shadowImage = UIImage()
-//        
-//     
-//        let blurEffect = UIBlurEffect(style: .dark)
-//        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-//        blurEffectView.frame = tabBar.bounds
-//        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        tabBar.addSubview(blurEffectView)
-//        tabBar.sendSubviewToBack(blurEffectView)
-
+        
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: UpcomingViewController())
         let vc3 = UINavigationController(rootViewController: DownloadViewController())

@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setupUI(){
-        self.view.backgroundColor = .systemBackground
+        self.view.backgroundColor = .systemYellow
         let vc1Image = UIImage(systemName:"magnifyingglass")
         let vc2Image = UIImage(systemName:"person.circle")
 

@@ -20,7 +20,9 @@ class SplashScreenViewController: UIViewController {
         setupLottieAnimation()
         
         // Start the animation task
-        startAnimationTask(to: 0.9)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            self.startAnimationTask(to: 0.8)
+        }
     }
     
     

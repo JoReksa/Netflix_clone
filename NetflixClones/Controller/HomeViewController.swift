@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import SnapKit
-class HomeController: UIViewController {
+class HomeViewController: UIViewController {
     
     private let labels: UILabel = {
         let Labels = UILabel()
@@ -26,7 +26,7 @@ class HomeController: UIViewController {
     }
     
     private func setupUI(){
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .systemBackground
         self.view.addSubview(labels)
         
         labels.snp.makeConstraints{

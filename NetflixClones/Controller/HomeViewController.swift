@@ -8,50 +8,52 @@
 import Foundation
 import UIKit
 import SnapKit
-class HomeViewController: UIViewController {
+
+
+class HomeViewController: BaseViewController {
     
-    private let labels: UILabel = {
-        let Labels = UILabel()
-        Labels.textColor = .white
-        Labels.textAlignment = .center
-        Labels.font = .systemFont(ofSize: 26 , weight: .bold)
-        Labels.text = "For You"
-        Labels.textAlignment = .left
-        Labels.sizeToFit()
-        return Labels
+    private lazy var homeTableView: UITableView = {
+        let tableView = UITableView ()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.separatorStyle = .none
+    
+        return tableView
     }()
     
-
     override func viewDidLoad(){
         super.viewDidLoad()
         setupUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = false
-    }
+
     
     private func setupUI(){
         self.view.backgroundColor = .systemYellow
-        let vc1Image = UIImage(systemName:"magnifyingglass")
-        let vc2Image = UIImage(systemName:"person.circle")
-
-        let leftItem = UIBarButtonItem(customView: labels)
-        navigationItem.leftBarButtonItem = leftItem
-        
-        let search = UIBarButtonItem(image: vc1Image, style: .plain, target: self, action: #selector(searchButton))
-        let profile = UIBarButtonItem(image: vc2Image, style: .plain, target: self, action: #selector(profileButton))
-        search.tintColor = .label
-        profile.tintColor = .label
-        navigationItem.rightBarButtonItems = [profile, search]
-
-    }
-    @objc private func searchButton () {
-        
+        self.view.addSubview(homeTableView)
+        homeTableView.frame = view.bounds
     }
     
-    @objc private func profileButton () {
-        
+    
+
+}
+
+
+extension HomeViewController :UITableViewDataSource , UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier:"cell" , for:  indexPath) as _ else{
+//            
+//        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "cek"
+        return cell
+    }
+    
+    
 }

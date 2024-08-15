@@ -17,17 +17,6 @@ class BottomTabBarViewController: UITabBarController {
 
     //MARK: - BOTTOM TAB
     private func setupBar (){
-//        let dxs: CGFloat = 0
-//        let dys: CGFloat = -10
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-//        blurEffectView.frame = tabBar.bounds.insetBy(dx: dxs, dy: dys)
-        blurEffectView.frame = tabBar.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-        tabBar.addSubview(blurEffectView)
-        tabBar.sendSubviewToBack(blurEffectView)
-        
-
         
         let vc1 = UINavigationController(rootViewController: HomeViewController())
         let vc2 = UINavigationController(rootViewController: UpcomingViewController())
@@ -38,8 +27,8 @@ class BottomTabBarViewController: UITabBarController {
         vc3.tabBarItem.image = UIImage(systemName: "arrow.down.circle")
 
         vc1.title = "Home"
-        vc2.title = "Coming Soon"
-        vc3.title = "Downloads"
+        vc2.title = "New & Hot"
+        vc3.title = "Download"
 
         tabBar.tintColor = .label
 
